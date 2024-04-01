@@ -1,3 +1,7 @@
+import credentials from "../fixtures/example.json"
+
+
+
 /*დარეგისტრირდით https://www.cavea.ge-ზე ( ან რომელიმე თქვენთვის სასურველ საიტზე)
 
 დაწერეთ login - ის ტესტი,
@@ -7,13 +11,11 @@ fixtures -  შექმენით json ფაილი სადაც და
 დამატებითი დავალება მსურველებისთვის : ამავე საიტზე მოიფიქრეთ კიდევ 2 test case , კომენტარებად დაწერეთ თითოეული 
 სტეპი და მათი შესაბამისი კოდი ავტომატიზავიისთვის.*/
 
-const { getMaxListeners } = require("process");
 
-describe("cavea test cases", () => {
-  it("Login isregister person", () =>{
-   cy.visit("https://www.cavea.ge/");
-   cy.get('.col-xs-8 > .form-group > .btn-white').click()
-   cy.get('#username').type('x.dzidzaria85@gmail.com')
-   
-  });
+describe("cavea test cases",() =>{
+  it("my first case", () =>{
+    cy.login(credentials.email,credentials.Password)  
+    cy.isloggetin()
+});
+//cy.isloggetin()
 });
