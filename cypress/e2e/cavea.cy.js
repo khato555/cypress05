@@ -12,10 +12,36 @@ fixtures -  შექმენით json ფაილი სადაც და
 სტეპი და მათი შესაბამისი კოდი ავტომატიზავიისთვის.*/
 
 
+//describe("cavea test cases",() =>{
+  //emailit("my first case", () => {
+    //cy.login(credentials.user_email,credentials.Password)  
+    //cy.isloggetin()
+    //cy.get('.caret').click()
+
+
+    //cy.get('.dropdown-menu > :nth-child(3) > a').click()
+    
+
+    /*it ('my second case',()=>{
+        cy.registarion(credentials.first_name,credentials.last_name,credentials.mobile,credentials.user_email,credentials.Password,credentials.confirm_password)
+
+    })*/
+//})
+//})
 describe("cavea test cases",() =>{
-  it("my first case", () =>{
-    cy.login(credentials.email,credentials.Password)  
-    cy.isloggetin()
+    it("my first case", () =>{
+      cy.login(credentials.email,credentials.Password)  
+      cy.isloggetin()
+      cy.get('.caret').click()
+      cy.get('.dropdown-menu > :nth-child(3) > a').click()
+    }); 
+  //});
+  //მე-2 ტესტ ქეისი"რეგისტრაცია
+  /*it ('my second case',()=>{
+    cy.Register(credentials.first_name,credentials.last_name,credentials.mobile,
+        credentials.user_email,credentials.Password,credentials.confirm_password)
+  });*/
+
+     
 });
-//cy.isloggetin()
-});
+

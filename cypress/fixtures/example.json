@@ -1,7 +1,15 @@
 {
-  "name": "khatuna",
-  "email": "x.dzidzaria85@gmail.com",
+  "first_name":"khato",
+  "last_name":"dzidzaria",
+  "mobile":"595302273",
+  "user_email": "xato.dzidzariaa@gmail.com",
   "body": "Fixtures are a great way to mock data for responses to routes",
   "Password": "zarikuna555",
-  "username" : "khatuna"
+  "confirm_password":"zarikuna555",
+  "email":"x.dzidzaria85@gmail.com"
 }
+
+  
+ 
+  
+ 
